@@ -1,0 +1,692 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x1b05b93c6672e7f207F61edB54fa2755b15Eb085",
+    "txHash": "0x45f87d691ea8ba629b374841b3e81da080352e13994e458fd7815a3674ce1501"
+  },
+  "proxies": [
+    {
+      "address": "0xd22eDDb4F92ebd753a5B01f0Ca5E17db35EC6e42",
+      "txHash": "0xbde8dd25968ee92111065a1aab24b366055c9cd4db76958b0f4f79ee3509431f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xbcf67FB20d4186FA0292782893Ec72b60c4c1258",
+      "txHash": "0xb1221e3f840a72e88832e03d3caf78e418ec666e2ba4f058e24910642c7b2233",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xCf8c776338C4C1caDd0a730a504f70E066E7328D",
+      "txHash": "0x3bae7a5468fb46d10f976660f4813b5a14d09f5bcc9447b57343487945ba8e6f",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "042897c0ef85f9895bf673eef6f93f2373c4f4a710f9874f2a78afb2df7501d0": {
+      "address": "0x340ffa8209837dced4BDfC03341548be25eFffF9",
+      "txHash": "0x84a6208349c47568212855df4603874f545fdc1faf2d270af11eba80b18b8509",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_balances",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:40"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:42"
+          },
+          {
+            "label": "_totalSupply",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:44"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:46"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_string_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:47"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_array(t_uint256)45_storage",
+            "contract": "ERC20Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol:376"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC20BurnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20BurnableUpgradeable.sol:51"
+          },
+          {
+            "label": "_paused",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_bool",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "PausableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:116"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)34_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:62"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:260"
+          },
+          {
+            "label": "_hashedName",
+            "offset": 0,
+            "slot": "301",
+            "type": "t_bytes32",
+            "contract": "EIP712Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol:40",
+            "renamedFrom": "_HASHED_NAME"
+          },
+          {
+            "label": "_hashedVersion",
+            "offset": 0,
+            "slot": "302",
+            "type": "t_bytes32",
+            "contract": "EIP712Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol:42",
+            "renamedFrom": "_HASHED_VERSION"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "303",
+            "type": "t_string_storage",
+            "contract": "EIP712Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol:44"
+          },
+          {
+            "label": "_version",
+            "offset": 0,
+            "slot": "304",
+            "type": "t_string_storage",
+            "contract": "EIP712Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol:45"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "305",
+            "type": "t_array(t_uint256)48_storage",
+            "contract": "EIP712Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/cryptography/EIP712Upgradeable.sol:204"
+          },
+          {
+            "label": "_nonces",
+            "offset": 0,
+            "slot": "353",
+            "type": "t_mapping(t_address,t_struct(Counter)2113_storage)",
+            "contract": "ERC20PermitUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20PermitUpgradeable.sol:28"
+          },
+          {
+            "label": "_PERMIT_TYPEHASH_DEPRECATED_SLOT",
+            "offset": 0,
+            "slot": "354",
+            "type": "t_bytes32",
+            "contract": "ERC20PermitUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20PermitUpgradeable.sol:40",
+            "renamedFrom": "_PERMIT_TYPEHASH"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "355",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ERC20PermitUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20PermitUpgradeable.sol:108"
+          },
+          {
+            "label": "eas",
+            "offset": 0,
+            "slot": "404",
+            "type": "t_contract(IEAS)7621",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:19"
+          },
+          {
+            "label": "easSchemaRegistry",
+            "offset": 0,
+            "slot": "405",
+            "type": "t_contract(ISchemaRegistry)7666",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:20"
+          },
+          {
+            "label": "revocableSchemaUID",
+            "offset": 0,
+            "slot": "406",
+            "type": "t_bytes32",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:22"
+          },
+          {
+            "label": "nonRevocableSchemaUID",
+            "offset": 0,
+            "slot": "407",
+            "type": "t_bytes32",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:23"
+          },
+          {
+            "label": "terms",
+            "offset": 0,
+            "slot": "408",
+            "type": "t_mapping(t_uint256,t_struct(Terms)5365_storage)",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:65"
+          },
+          {
+            "label": "contractTerm",
+            "offset": 0,
+            "slot": "409",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:66"
+          },
+          {
+            "label": "userTerms",
+            "offset": 0,
+            "slot": "410",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(TermState)5382_storage))",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:68"
+          },
+          {
+            "label": "userAcceptedTerms",
+            "offset": 0,
+            "slot": "411",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:70"
+          },
+          {
+            "label": "userCreatedTerms",
+            "offset": 0,
+            "slot": "412",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:71"
+          },
+          {
+            "label": "userRejectedTerms",
+            "offset": 0,
+            "slot": "413",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:72"
+          },
+          {
+            "label": "userRevokedTerms",
+            "offset": 0,
+            "slot": "414",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:73"
+          },
+          {
+            "label": "privateTermRecipients",
+            "offset": 0,
+            "slot": "415",
+            "type": "t_mapping(t_uint256,t_array(t_address)dyn_storage)",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:74"
+          },
+          {
+            "label": "userPrivateTerms",
+            "offset": 0,
+            "slot": "416",
+            "type": "t_mapping(t_address,t_array(t_uint256)dyn_storage)",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:75"
+          },
+          {
+            "label": "tokenSpendingTermInfos",
+            "offset": 0,
+            "slot": "417",
+            "type": "t_mapping(t_uint256,t_struct(TokenSpendingTermInfo)5391_storage)",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:77"
+          },
+          {
+            "label": "escrowTermInfos",
+            "offset": 0,
+            "slot": "418",
+            "type": "t_mapping(t_uint256,t_struct(EscrowTermInfo)5398_storage)",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:78"
+          },
+          {
+            "label": "tokenSpendingTermId",
+            "offset": 0,
+            "slot": "419",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "PrivaSeal",
+            "src": "contracts/PrivaSeal.sol:80"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_string_storage)dyn_storage": {
+            "label": "string[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]",
+            "numberOfBytes": "1440"
+          },
+          "t_array(t_uint256)48_storage": {
+            "label": "uint256[48]",
+            "numberOfBytes": "1536"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_array(t_uint256)dyn_storage": {
+            "label": "uint256[]",
+            "numberOfBytes": "32"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IEAS)7621": {
+            "label": "contract IEAS",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ISchemaRegistry)7666": {
+            "label": "contract ISchemaRegistry",
+            "numberOfBytes": "20"
+          },
+          "t_enum(TermStatus)5370": {
+            "label": "enum PrivaSeal.TermStatus",
+            "members": [
+              "NONE",
+              "ACCEPTED",
+              "REJECTED",
+              "REVOKED"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_enum(TermType)5335": {
+            "label": "enum PrivaSeal.TermType",
+            "members": [
+              "NONE",
+              "BASIC",
+              "TOKEN_SPENDING",
+              "ESCROW"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_uint256)dyn_storage)": {
+            "label": "mapping(address => uint256[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(TermState)5382_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct PrivaSeal.TermState))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(Counter)2113_storage)": {
+            "label": "mapping(address => struct CountersUpgradeable.Counter)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)34_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_address)dyn_storage)": {
+            "label": "mapping(uint256 => address[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(EscrowTermInfo)5398_storage)": {
+            "label": "mapping(uint256 => struct PrivaSeal.EscrowTermInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(TermState)5382_storage)": {
+            "label": "mapping(uint256 => struct PrivaSeal.TermState)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Terms)5365_storage)": {
+            "label": "mapping(uint256 => struct PrivaSeal.Terms)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(TokenSpendingTermInfo)5391_storage)": {
+            "label": "mapping(uint256 => struct PrivaSeal.TokenSpendingTermInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Counter)2113_storage": {
+            "label": "struct CountersUpgradeable.Counter",
+            "members": [
+              {
+                "label": "_value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(EscrowTermInfo)5398_storage": {
+            "label": "struct PrivaSeal.EscrowTermInfo",
+            "members": [
+              {
+                "label": "lockedAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "releaseTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "recipientAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(RoleData)34_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(TermState)5382_storage": {
+            "label": "struct PrivaSeal.TermState",
+            "members": [
+              {
+                "label": "status",
+                "type": "t_enum(TermStatus)5370",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "deadline",
+                "type": "t_uint64",
+                "offset": 1,
+                "slot": "0"
+              },
+              {
+                "label": "attestId",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "revokedOn",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "allowance",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(Terms)5365_storage": {
+            "label": "struct PrivaSeal.Terms",
+            "members": [
+              {
+                "label": "contractAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "website",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "updatable",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "revocable",
+                "type": "t_bool",
+                "offset": 1,
+                "slot": "3"
+              },
+              {
+                "label": "termsUrl",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "easSchemaId",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "createdOn",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "updatedOn",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "pastSchemaIds",
+                "type": "t_array(t_bytes32)dyn_storage",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "pastTermsUrl",
+                "type": "t_array(t_string_storage)dyn_storage",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "isPrivate",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "termType",
+                "type": "t_enum(TermType)5335",
+                "offset": 1,
+                "slot": "10"
+              }
+            ],
+            "numberOfBytes": "352"
+          },
+          "t_struct(TokenSpendingTermInfo)5391_storage": {
+            "label": "struct PrivaSeal.TokenSpendingTermInfo",
+            "members": [
+              {
+                "label": "approvalAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "deadline",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "spenderAddress",
+                "type": "t_address",
+                "offset": 8,
+                "slot": "1"
+              },
+              {
+                "label": "tokenAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
